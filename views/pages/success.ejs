@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>OAuth Test</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<style>
+			table {
+    			display: inline-block;
+    			margin-left: auto;
+    			margin-right: auto;
+			}
+
+			td {
+				text-align: left;
+			}
+		</style>>
+    </head>
+  
+	<body>
+    	<div class="container text-center">
+      		<div class="jumbotron" text-center>
+        		<h1 class="text-primary text-center">
+					<span class="fa fa-user"></span>
+					 Profile Information
+				</h1>
+				<table>
+					<tr>
+						<td>Name:  </td>
+						<td><%= userProfile.displayName %></td>
+					</tr>
+					<tr>
+						<td>Email:  </td>
+						<td><%= userProfile.emails[0].value %></td>
+					</tr>
+					<tr>
+						<td>UID:  </td>
+						<td><%= userProfile.id %></td>
+					</tr>
+				</table>
+          		
+      		</div>
+			<a href="/newtab" target="_blank">Open a new tab</a>
+			<br><br>
+			<a href="/logout" class="btn btn-danger"><span class="fa fa-google"></span> Sign Out</a>
+    	</div>
+  	</body>
+
+	
+</html> 
