@@ -74,6 +74,7 @@ passport.use(new GoogleStrategy({
 		return done(null, userProfile);
 		}
 	));
+	// https://oauthnodejs.azurewebsites.net/google/callback
  
 app.get('/auth/google', 
 	passport.authenticate('google', { scope : ['profile', 'email'] }));
