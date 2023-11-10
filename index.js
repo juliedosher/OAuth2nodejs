@@ -62,8 +62,8 @@ passport.deserializeUser(function(obj, cb) {
 
 
 /*  Google OAuth  */
-GOOGLE_CLIENT_ID="473681152374-fnt32hmh6hjgql8fkc2h7c6t9hb1ce36.apps.googleusercontent.com"
-GOOGLE_CLIENT_SECRET="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"
+const GOOGLE_CLIENT_ID="473681152374-fnt32hmh6hjgql8fkc2h7c6t9hb1ce36.apps.googleusercontent.com"
+const GOOGLE_CLIENT_SECRET="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"
 passport.use(new GoogleStrategy({
 	clientID: GOOGLE_CLIENT_ID,
     clientSecret: GOOGLE_CLIENT_SECRET,
