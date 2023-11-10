@@ -44,7 +44,8 @@ app.get('/logout', function(req, res, next) {
 		if (err) { return next(err); }
 		userProfile = null
 	  	res.redirect('/');
-		console.log(userProfile)
+		console.log("Logged out")
+		console.log("Profile: " + userProfile)
 	});
   });
 
